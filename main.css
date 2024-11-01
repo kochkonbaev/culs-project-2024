@@ -1,0 +1,131 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header span {
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  
+  nav button {
+    background: #5c6bc0;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  nav button:hover {
+    background-color: #7986cb;
+    transform: scale(1.1);
+  }
+  
+  main {
+    width: 90%;
+    max-width: 800px;
+    padding: 2rem 0;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Section Styling */
+  section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  section:hover {
+    transform: scale(1.02);
+  }
+  
+  section h1,
+  section h2 {
+    color: #3f51b5;
+    font-weight: 800;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    color: #555;
+  }
+  
+  blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #666;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    border-left: 4px solid #3f51b5;
+    animation: slideIn 1s ease;
+  }
+  
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  /* Footer Styling */
+  footer {
+    margin-top: 3rem;
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
+  footer h1 {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #3f51b5;
+  }
+  
+  /* Buttons and Counters */
+  #slide-count, #deck-count {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    background-color: #3f51b5;
+    border-radius: 5px;
+    margin: 0 0.5rem;
+  }
+  
